@@ -1,0 +1,98 @@
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='https://www.w3.org/1999/xhtml'>
+
+<head>
+<script>
+	function insertItemRows(itemRowsHTML) {
+		var container = document.getElementById("items-table-container");
+		container.innerHTML = itemRowsHTML;
+	}
+</script>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+</head>
+<body
+	style='font-family: Tahoma; font-size: 12px; color: #333333; background-color: #FFFFFF;'>
+	<table align='center' border='0' cellpadding='0' cellspacing='0'
+		style='height: 842px; width: 595px; font-size: 12px;'>
+		<tr>
+			<td valign='top'>
+				<table width='100%' cellspacing='0' cellpadding='0'>
+					<tr>
+						<td valign='bottom' width='50%' height='50'>
+							<div align='left'>
+								<img src='images/Jai Mahakaleshwar.png' height="200px" width="200px" />
+							</div> <br />
+						</td>
+
+						<td width='50%'>&nbsp;</td>
+					</tr>
+				</table>Bill To: <br /> <br />
+				<table width='100%' cellspacing='0' cellpadding='0'>
+					<tr>
+						<td valign='top' width='35%' style='font-size: 16px;'><strong>$CUSTOMER_NAME</strong><br />
+
+
+						</td>
+						<td valign='top' width='35%'></td>
+						<td valign='top' width='30%' style='font-size: 14px;'><b>Date:
+								$DATE</b><br /></td>
+
+					</tr>
+				</table> <br>
+					<table width='100%' cellspacing='0' cellpadding='2' border='1'
+						bordercolor='#CCCCCC'>
+						<tr>
+
+							<td width='30%' bordercolor='#ccc' bgcolor='#f2f2f2'
+								style='font-size: 12px;'><strong>Item Name </strong></td>
+							<td bordercolor='#ccc' bgcolor='#f2f2f2' style='font-size: 12px;'><strong>Qty</strong></td>
+							<td bordercolor='#ccc' bgcolor='#f2f2f2' style='font-size: 12px;'><strong>Weight</strong></td>
+							<td bordercolor='#ccc' bgcolor='#f2f2f2' style='font-size: 12px;'><strong>Rate</strong></td>
+							<td bordercolor='#ccc' bgcolor='#f2f2f2' style='font-size: 12px;'><strong>Sub
+									Total</strong></td>
+
+						</tr>
+
+						<div id="items-table-container">$ITEMS_TABLE_ROWS</div>
+
+
+
+
+						</td>
+						</tr>
+					</table>
+					<table width='100%' cellspacing='0' cellpadding='2' border='0'>
+						<tr>
+
+							<td>
+								<table width='100%' cellspacing='0' cellpadding='2' border='0'>
+									<tr>
+										<td align='right' style='font-size: 12px;'>Subtotal</td>
+										<td align='right' style='font-size: 12px;'>₹
+											$TOTAL_AMOUNT
+											<td>
+									</tr>
+
+									<tr>
+										<td align='right' style='font-size: 12px;'>TAX(8%)</td>
+										<td align='right' style='font-size: 12px;'>₹ $TAX_AMOUNT</td>
+									</tr>
+
+
+								</table>
+							</td>
+						</tr>
+					</table>
+
+					<hr>
+						<div>
+							<span align='left' style='font-size: 12px;'><b>Total</b></span> <span
+								style='font-size: 12px; float: right; padding-right: 20px;'><b>₹
+									$FINAL_AMOUNT</b></span>
+						</div>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
