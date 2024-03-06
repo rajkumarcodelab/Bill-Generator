@@ -1,2 +1,2 @@
-Bill - Generator Desktop Application 
+Bill-Generator Desktop Application
 
